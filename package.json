@@ -1,5 +1,5 @@
 {
-  "name": "translator-service",
+  "name": "i18next-translation-service",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
