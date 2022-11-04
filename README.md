@@ -2,6 +2,13 @@
 
 This service was designed to work with translating files that were pared from the `i18next-parse`
 
+
+## Install this package
+
+```bash
+npm i --save git+ssh://git@github.com:sprout-tech/i18next-translation-service.git#v1.0.2 --force
+```
+
 ## Configure the service
 
 #### Add these to the .env file of the project
