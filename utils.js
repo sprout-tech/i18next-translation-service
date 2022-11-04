@@ -1,5 +1,9 @@
 const fs = require("fs");
 const path = require("path");
+const fullPath = path.dirname(require.main.filename);
+const regexResp = /^(.*?)node_modules/.exec(fullPath);
+const appRoot = regexResp ? regexResp[1] : fullPath;
+
 /**
  * @description Read files synchronously from a folder, with natural sorting
  * @param {String} dir Absolute path to directory
@@ -32,7 +36,7 @@ function readFilesSync(dir) {
 }
 
 function makeRelativePath(pathToResolve) {
-  return path.resolve(`${__dirname}/${pathToResolve}`);
+  return path.resolve(`${appRoot}/${pathToResolve}`);
 }
 
 function readJSONFile(filePath) {

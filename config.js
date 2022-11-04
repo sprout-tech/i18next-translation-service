@@ -44,7 +44,7 @@ const config = {
   baseLanguage: envVars[requiredEnvKeys.baseLanguage], // "en",
   // Do not include the base language
   targetLanguages: targetLanguages, // ["es", "uk", "it", "hi", "ps"],
-  localesPath: `../${envVars[requiredEnvKeys.localesPath]}`, // `../public/locales/`,
+  localesPath: envVars[requiredEnvKeys.localesPath], // `../public/locales/`,
   googleTranslateApiKey: envVars[requiredEnvKeys.googleTranslateApiKey], //"AIzaSyB5CchjO6r6rBxXIIikebkr9JrBKUUL21c",
   googleTranslateProjectId: envVars[requiredEnvKeys.googleTranslateProjectId], // "village-paths-translate-api",
 };
