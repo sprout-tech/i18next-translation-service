@@ -6,7 +6,7 @@ This service was designed to work with translating files that were pared from th
 ## Install this package
 
 ```bash
-npm i --save git+ssh://git@github.com:sprout-tech/i18next-translation-service.git#v1.0.2 --force
+npm i --save-dev git+ssh://git@github.com:sprout-tech/i18next-translation-service.git#v1.0.3
 ```
 
 ## Configure the service
